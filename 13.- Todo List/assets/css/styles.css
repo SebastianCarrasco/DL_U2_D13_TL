@@ -1,0 +1,104 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0; /* Elimina los márgenes predeterminados de todos los elementos */
+    padding: 0; /* Elimina el padding predeterminado de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del elemento */
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente principal para la página */
+    background-color: #f4f4f4; /* Establece un color de fondo gris claro para la página */
+    display: flex; /* Utiliza flexbox para alinear el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Hace que el cuerpo tenga una altura igual a la ventana del navegador */
+}
+
+.container {
+    background: white; /* Establece un fondo blanco para el contenedor principal */
+    padding: 20px; /* Añade un padding interno al contenedor */
+    border-radius: 8px; /* Redondea las esquinas del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra ligera alrededor del contenedor */
+    width: 80%; /* Establece el ancho del contenedor al 80% del ancho disponible */
+    max-width: 600px; /* Limita el ancho máximo del contenedor a 600px */
+}
+
+header {
+    text-align: center; /* Centra el texto dentro del encabezado */
+    margin-bottom: 20px; /* Añade un margen inferior para separar el encabezado de otros elementos */
+}
+
+.task-summary {
+    margin-bottom: 20px; /* Añade un margen inferior para separar el resumen de tareas de otros elementos */
+    text-align: center; /* Centra el texto dentro de la sección de resumen de tareas */
+}
+
+.task-input {
+    display: flex; /* Utiliza flexbox para alinear los elementos en fila */
+    justify-content: space-between; /* Distribuye el espacio uniformemente entre los elementos */
+    margin-bottom: 20px; /* Añade un margen inferior para separar el input de tareas de otros elementos */
+}
+
+.task-input input {
+    width: 70%; /* Establece el ancho del input al 70% del contenedor padre */
+    padding: 10px; /* Añade padding interno al input */
+    border: 1px solid #ddd; /* Añade un borde gris claro al input */
+    border-radius: 5px; /* Redondea las esquinas del input */
+}
+
+.task-input button {
+    padding: 10px 20px; /* Añade padding interno al botón */
+    background-color: #007BFF; /* Establece el color de fondo azul para el botón */
+    color: white; /* Establece el color del texto del botón a blanco */
+    border: none; /* Elimina el borde predeterminado del botón */
+    border-radius: 5px; /* Redondea las esquinas del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+}
+
+.task-input button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo del botón cuando se pasa el mouse sobre él */
+}
+
+.task-list ul {
+    list-style: none; /* Elimina los puntos de la lista por defecto */
+    padding: 0; /* Elimina el padding interno de la lista */
+}
+
+.task-list li {
+    background-color: #f9f9f9; /* Establece un fondo gris claro para cada tarea */
+    border: 1px solid #ddd; /* Añade un borde gris claro alrededor de cada tarea */
+    padding: 10px; /* Añade padding interno a cada tarea */
+    margin-bottom: 10px; /* Añade un margen inferior para separar las tareas entre sí */
+    border-radius: 5px; /* Redondea las esquinas de cada tarea */
+    display: flex; /* Utiliza flexbox para alinear el contenido de cada tarea */
+    justify-content: space-between; /* Coloca los elementos dentro de cada tarea a los extremos */
+    align-items: center; /* Alinea verticalmente el contenido de cada tarea */
+}
+
+.task-list li.completed {
+    text-decoration: line-through; /* Dibuja una línea a través del texto de las tareas completadas */
+    color: #888; /* Cambia el color del texto a gris para las tareas completadas */
+}
+
+.task-list button {
+    background-color: #28a745; /* Establece el color de fondo verde para los botones de acción de tareas */
+    color: white; /* Establece el color del texto del botón a blanco */
+    border: none; /* Elimina el borde predeterminado del botón */
+    padding: 5px 10px; /* Añade padding interno al botón */
+    border-radius: 5px; /* Redondea las esquinas del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    margin-left: 10px; /* Añade un margen izquierdo para separar los botones entre sí */
+}
+
+.task-list button:hover {
+    background-color: #218838; /* Cambia el color de fondo del botón cuando se pasa el mouse sobre él */
+}
+
+.task-list button.delete {
+    background-color: #dc3545; /* Establece el color de fondo rojo para el botón de eliminar */
+}
+
+.task-list button.delete:hover {
+    background-color: #c82333; /* Cambia el color de fondo del botón de eliminar cuando se pasa el mouse sobre él */
+}
